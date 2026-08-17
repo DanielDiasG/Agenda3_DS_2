@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="Agenda3.css">
+
+    <title>Madeira e Cia Ltda</title>
+    <!--  Nome do cliente
+      Valor da compra
+      Forma de pagamento (depósito, boleto, cartão de crédito)
+Utilize HTML e CSS para o layout, buscando um visual agradável e funcional.   -->
+
+
+<!-- css interno pois o localhost não tava conseguindo mostrar com o css externo-->
+    <style>
+        div {
+            margin-left: 20%;
+            margin-right: 20%;
+            padding: 20px;
+            background-color: #6e351c;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #430704;
+
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #652510;
+        }
+
+        img:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Madeira e Cia Ltda</h1>
+
+
+
+    <h2>⌜ Promoção de Aniversário!! ⌝ <br>⌞ Confira os nossos Descontos ⌟</h2>
+    
+    <form id="form1" name="form1" method="POST" action="Agenda3.php">
+        <b>
+            Nome Completo: <input required name="txtNome" type="text" id="txtNome"
+                placeholder="Ex.: Gabriel Souza Dias"><br>
+            Valor da compra: <input required min="0" name="txtValorCompra" type="num" id="txtValorCompra"
+                placeholder="Ex.: 450"><br>
+
+            <select class="combo w3-input w3-border w3-light-grey" id="formapagamento" name="cmbPag" required>
+                <option value="depósito">Depósito</option>
+                <option value="boleto">Boleto</option>
+                <option value="cartão de crédito">Cartão de Crédito</option>
+            </select>
+
+            <input name="Enviar" type="submit" id="enviar" class="submit">
+        </b>
+    </form>
+    <div>
+        <figure>
+            <img src="lojaMadeiraeCia.png" alt="Madeira e Cia Ltda" width="100%" height="100%">
+        </figure>
+    </div>
+    <h1>———————————————————————————</h1>
+</body>
+
+</html>
